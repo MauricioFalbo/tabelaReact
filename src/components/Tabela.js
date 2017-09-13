@@ -8,10 +8,10 @@ import HeadTabela from './HeadTabela';
 import TimeTabela from './TimeTabela';
 
 const times = [
-		        {nome : "Fluminense", vit  : 2, der  : 0, emp  : 0},
-				{nome : "Flamengo",   vit  : 0, der  : 0, emp  : 0},
-				{nome : "Vasco",      vit  : 0, der  : 0, emp  : 0},
-				{nome : "Botafogo",   vit  : 0, der  : 0, emp  : 0}
+		        {nome : "Fluminense", vit  : 3, der  : 0, emp  : 0,pontos:9},
+				{nome : "Flamengo",   vit  : 0, der  : 2, emp  : 1,pontos:1},
+				{nome : "Vasco",      vit  : 1, der  : 1, emp  : 1,pontos:4},
+				{nome : "Botafogo",   vit  : 2, der  : 1, emp  : 0,pontos:6}
         	]; 
 
 export default class Tabela extends React.Component{
@@ -19,7 +19,7 @@ export default class Tabela extends React.Component{
     constructor(){
     	super();
     	this.state = {
-    		ordenarPor:'vit'
+    		ordenarPor:'pontos'
     	}
     }
 

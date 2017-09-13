@@ -7,6 +7,7 @@ export default class Tabela extends React.Component{
 
     comparaTimes (timeA, timeB) {
         var criterio = this.props.ordenarPor;
+
         if (!timeA.hasOwnProperty(criterio) || !timeB.hasOwnProperty(criterio)) {
             return 0;
         }
